@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Mathematical Laws</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body style="background-color: #093663">
+    <header>
+        <div class="row">
+            <ul class="main-nav">
+                <div class="logo"><img src="./logo.png"></div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experiment.html">Experiment</a></li>
+                <li><a href="backgroundinfo.html">Background Info</a></li>
+                <li><a href="aboutme.html">About the Creator</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="app-text">
+                <h1>Experiment</h1>
+                <p class="paragraph">Enter your numbers here, separated by spaces. Please don't put a space at the end.
+                    This website returns a percent of match
+                    for each law: Zipf's, Benford's, and Heaps'.</p>
+                <br>
+            </div>
+        </div>
+
+        <div class="Row">
+            <div class="Column">
+                <div class="app-text">
+                    <p>Select local CSV File:</p>
+                    <input id="csv" type="file">
+                    <br>
+                    <br>
+                    <output id="out">
+                        File contents will appear here
+                    </output>
+                    <br>
+                    <br>
+                    <button onclick="runexperiment()">
+                        Submit Files
+                    </button>
+                    <br>
+                    <br>
+                    <button onclick="experiment()">
+                        Submit
+                    </button>
+                </div>
+
+
+            </div>
+            <div class="Column">
+                <div class="resultheader">
+                    <p>Results:</p>
+                </div>
+                <div class="results">
+                    <p id="result1"></p>
+                    <p id="result2"></p>
+                    <p id="result3"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="./experiment.js"></script>
+
+</html>
